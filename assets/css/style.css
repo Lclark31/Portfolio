@@ -1,6 +1,6 @@
 :root {
     --color-one: #000000;
-    --color-two: #fbd404;
+    --color-two: #fed700;
     --color-three: white;
     --color-four: white;
 }
@@ -14,7 +14,10 @@
 body {
     background-color: var(--color-one);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: var(--color-four)
+    color: var(--color-four);
+    background-image: url('../images/minimal-desktop-wallpaper-high-resolution-4k-16.jpg');
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 /* hero */
@@ -23,7 +26,6 @@ body {
     width: 100%;
     height: 85vh;
     background-image: url('../images/yellow-aesthetic-wallpaper-20072002223649.jpg');
-    background-position: cover;
     background-position: bottom;
     color: var(--color-one)
 }
@@ -42,9 +44,15 @@ body {
 }
 
 .name {
+    background-color: var(--color-one);
+    padding: 2%;
+    width: 100%;
+}
+
+.name h2 {
     text-align: center;
     padding: 12px;
-    margin: 2% 42%;
+    margin: 0 42%;
     color: var(--color-one);
     background-color: var(--color-four);
     border-radius: 10px;
@@ -64,14 +72,15 @@ nav ul {
 nav ul li {
     border-radius: 10px;
     margin-bottom: 20px;
+    margin-top: 10px;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: var(--color-two);
+    color: var(--color-one);
     text-shadow: none;
-    border-bottom: 3px solid var(--color-three);
-    border-top: 3px solid var(--color-three);
+    border-bottom: 3px solid var(--color-one);
+    border-top: 3px solid var(--color-one);
     border-radius: 10px;
     text-shadow: 2px 2px rgba(255, 255, 255, 0.2);
 }
@@ -118,7 +127,7 @@ nav ul li a:hover {
 /* my work */
 
 .projects {
-    background-color: var(--color-four);
+    /*background-color: var(--color-four);*/
     color: var(--color-one);
     text-align: center;
     justify-content: space-evenly;
@@ -145,6 +154,6 @@ nav ul li a:hover {
 
 /* footer */
 
-footer {
-    background-color: var(--color-two);
-}
+/* footer {
+    background-color: var(--color-two); 
+}*/
